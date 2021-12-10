@@ -5,7 +5,7 @@ import { useRoute } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Entypo';
 import { colors, fonts } from '../../styles';
 
-import { Button, RadioGroup, Dropdown } from '../../components';
+import { Button, RadioGroup } from '../../components';
 
 export default function ComponentsScreen(props) {
   const route = useRoute();
@@ -337,11 +337,7 @@ export default function ComponentsScreen(props) {
       <View style={styles.componentsSection}>
         <Text style={styles.componentSectionHeader}>Dropdown</Text>
 
-        <Dropdown
-          style={{ width: '100%', alignSelf: 'center' }}
-          onSelect={() => {}}
-          items={['option 1', 'option 2']}
-        />
+   
       </View>
     </ScrollView>
   );
